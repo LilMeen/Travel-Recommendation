@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Travel Recommendation</title>
+        <link rel="stylesheet" href="./travel_recommendation.css">
+    </head>
+    <body>
+        <nav>
+            <div class="web-title" style="display: inline-flex;">
+                <img src="./image/travel.png" alt="Travel" width="45" height="45">
+                <h1 style="align-self: center; padding-left: 10px;">Travel Recommendation</h1>
+            </div>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about_us.html">About us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <div id="search">
+                <input id="search-bar" type="text" placeholder="Enter a destination">
+                <button class="search-button">
+                    <img id="clear-button" src="./image/cross.png" width="20" height="20" style="display: none;">
+                </button>
+                <button class="search-button" id="search-button">
+                    <img src="./image/search.jpg" width="20" height="20">       
+                </button>
+            </div>
+        </nav>
+        <div class="home"></div>
+        <div class="social-media">
+            <div id="vl"></div>
+            <ul id="logo">
+                <li><a href="https://www.facebook.com/"><img src="./image/facebook.png" alt="Facebook" width="50" height="50"></a></li>
+                <li><a href="https://www.instagram.com/"><img src="./image/instagram.png" alt="Instagram" width="50" height="50"></a></li>
+                <li><a href="https://www.twitter.com/"><img src="./image/twitter.png" alt="Twitter" width="50" height="50"></a></li>
+                <li><a href="https://www.youtube.com/"><img src="./image/youtube.png" alt="Youtube" width="50" height="50"></a></li>
+            </ul>
+        </div>
+        <div class="home-content">
+            <h1>CONTACT US</h1>
+            <fieldset style="border: none; text-align: left;">
+                <form id="contact-form">
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="message">Message</label><br>
+                    <textarea id="message" name="message"></textarea><br>
+                    <button>Submit</button>
+                </form>
+            </fieldset>
+        </div>
+        <script src="./travel_recommendation.js"></script>
+    </body>
+</html>
